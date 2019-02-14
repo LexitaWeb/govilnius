@@ -22,7 +22,9 @@ const IndexPage = () => (
 		</div>
 	</section>
 	<section>
-		<Gallery elements={[{src:img1},{src:img2},{src:img3}]}/>
+		<div className="container">
+			<Gallery elements={[{src:img1, desc:'sada sads asd asd '},{src:img2, desc:'asdasdj laksjd lkjasdl kjalskd jlaksj dlkajsd lkjasld kjalskd jlaskjd lkajsd lkjasl kj'},{src:img3, desc:'asdalskdj aksjdl kjasld kjalsdk jlaskjd lakjsd lkjasd l'},{src:img1, desc:'ajjajajaaj'},{src:img2},{src:img3},{src:img1},{src:img2},{src:img3},]}/>
+		</div>
 	</section>
   </Layout>
 )
