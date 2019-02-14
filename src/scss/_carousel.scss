@@ -1,0 +1,19 @@
+.slick{
+	&-slider{
+		margin-bottom: -6px;
+	}
+	&-arrow{
+		z-index: 9000;
+		width: 2rem;
+		height: 2rem;
+		&:before{
+			font-size: 2rem;
+		}
+	}
+	&-prev{
+		left: .5rem;
+	}
+	&-next{
+		right: .5rem;
+	}
+}

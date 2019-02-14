@@ -1,0 +1,102 @@
+.content{
+	&-card{
+		border-radius: .25rem;
+		box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+		overflow: hidden;
+		margin-bottom: 2rem;
+		&-section{
+			background: $primary;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			&-text{
+				flex-basis: 75%;
+				padding: 4rem;
+				margin-bottom: 0;
+				text-align: justify;
+			}
+			&-img{
+				padding: 4rem;
+				background: #fff;
+				text-align: center;
+				flex-basis: 25%;
+				img{
+					width: 200px;
+				}
+			}
+			@media screen and (max-width:992px){
+				flex-direction: column;
+				&-img{
+					padding: 2rem 4rem;
+					width: 100%;
+				}
+				&-text{
+					order:1;
+				}
+			}
+			&.section-icon{
+				.content-card-section{
+					&-img{
+						padding: 2rem 4rem;
+					}
+				}
+				&:hover{
+					cursor: pointer;
+					background: darken($primary,5%);
+					.content-card-section-img{
+						background: #efefef;
+					}
+				}
+			}
+		}
+		&-social{
+			&-wrap{
+				display: flex;
+				min-height: 1px;
+			}
+			
+			flex-basis: 33.333%;
+			text-decoration: none!important;
+			color: #fff;
+			&:hover{
+				color: #fff;
+			}
+
+			i{
+				font-size: 2rem;
+			}
+			text-align: center;
+			padding: .5rem 1rem; 
+			$brands:(
+				fb:#3b5998,
+				ig:#517fa4,
+				in:#0077b5
+			);
+			@each $brand,$color in $brands{
+				&.card_#{$brand}{
+					background: $color;
+				}
+			}
+
+			@media screen and (min-width:992px){
+				padding: .5rem .75rem;
+				&-wrap{
+					position: fixed;
+					top:50%;
+					left: 0;
+					transform: translateY(-50%);
+					flex-direction: column;
+				}
+				&:first-child{
+					border-top-right-radius: .5rem;
+				}
+				&:last-child{
+					border-bottom-right-radius: .5rem;
+				}
+				i{
+					font-size: 1.25rem;
+				}
+			}
+		}
+	}
+}
