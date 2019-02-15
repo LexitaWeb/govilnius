@@ -27,7 +27,7 @@ export default () => {
 				</li>
 				<li>
 					<Link to="#">
-						Contacts
+						Good to know
 					</Link>
 				</li>
 				<li>
@@ -45,9 +45,10 @@ export default () => {
 						Privacy policy
 					</Link>
 				</li>
+				
 				<li>
 					<Link to="#">
-						Good to know
+						Contacts
 					</Link>
 				</li>
 			</ul>

@@ -9,7 +9,13 @@ h1,h2,h3,h4{
 			left: 0;
 			width: 100%;
 			height: 4px;
-			background: linear-gradient(to right, rgba(0,0,0,.5), transparent);
+			background: linear-gradient(to right, rgb(69, 14, 71), transparent);
+		}
+	}
+	@for $i from 1 to 5{
+		&.spaced-#{$i}{
+			letter-spacing: 3rem / $i;
 		}
 	}
 }
+
