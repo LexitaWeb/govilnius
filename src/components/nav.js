@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "gatsby";
-// import Logo from '../assets/img/govilnius-logo.png';
+import Logo from '../assets/img/logo.png';
 
 
 
@@ -49,6 +49,11 @@ const Nav = () => {
 					{/* <li className="nav-logo">
 						<img src={Logo} alt="Go Vilnius"/>
 					</li> */}
+					<li className="d-flex align-items-center mr-3">
+						<Link to='/'>
+							<img src={Logo} className="w-100" alt="Go Vilnius"/>
+						</Link>
+					</li>
 					{links.map((el,i)=>{
 						return(
 						<li key={i}>
